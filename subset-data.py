@@ -1,3 +1,6 @@
+"""
+Select the subset of the data to use in the assignment.
+"""
 import pandas as pd
 import numpy as np
 

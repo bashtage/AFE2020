@@ -1,5 +1,12 @@
-# AFE2020
-Advanced Financial Econometrics - Trinity Term 2020
+# Advanced Financial Econometrics - Trinity Term 2020
+
+## Course Website
+
+You can find the [course website here](https://www.kevinsheppard.com/teaching/mfe/advanced-financial-econometrics-forecasting/).
+
+## Pre-recorded Lectures
+
+The prerecorded lectures are [available on YouTube](https://www.youtube.com/playlist?list=PLVR_rJLcetzmES8tqjgqlQw1Vx2IKMVot).
 
 ## Notebooks
 

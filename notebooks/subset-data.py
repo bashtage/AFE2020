@@ -62,3 +62,12 @@ mat = hdf5storage.loadmat("assignment-data-train.mat")
 for key in mat:
     assert key in retain_mat
     np.testing.assert_array_equal(mat[key], retain_mat[key])
+
+test_data = pd.read_csv("monthly-test.csv.zip", index_col="V1").T
+test_data.index = np.arange(1, 19)
+test_data.index.name = "Horizon"
+test_subset = test_data[list(retain.keys())]
+test_subset.to_csv("../assignment-data/assignment-data-test.csv")
+test_subset.to_hdf("../assignment-data/assignment-data-test.h5", "assignment_test_data", complevel=9)
+test_mat = {k: np.asarray(v) for k, v in test_data.items()}
+hdf5storage.savemat("../assignment-data/assignment-data-test.mat", test_mat, appendmat=False)
